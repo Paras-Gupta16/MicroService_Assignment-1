@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke-Explorer Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-actions">
+            <button id="themeToggle" onclick="toggleDarkMode()">🌓 Toggle Theme</button>
+        </div>
+
+        <h1>Poke-Explorer</h1>
+
+        <div class="search-box">
+            <input type="text" id="pokemonInput" placeholder="Enter name (e.g. pikachu)">
+            <div class="button-group">
+                <button class="btn-search" onclick="searchPokemon()">Search</button>
+                <button class="btn-all" onclick="fetchAllPokemon()">View All</button>
+            </div>
+        </div>
+
+        <div id="historySection" class="history-container"></div>
+
+        <div id="pokemonCard" class="card" style="display: none;"></div>
+
+        <ul id="pokemonList" class="poke-grid"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
